@@ -1,0 +1,19 @@
+body{
+    background-color:black
+}
+h1{
+    color:aquamarine;
+    font-family:arial;
+    font-size: 25px
+}
+.inledning{
+    color:aqua;
+    Font-family: 'times new roman', times, serif;
+    font-size:15px
+}
+img{
+    width:25%
+}
+a{
+    color:red
+}
