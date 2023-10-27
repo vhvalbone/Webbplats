@@ -1,38 +1,77 @@
-<!--jag använder detta -->
+<!-- Elementet <!doctype html> gör deklaration som används i HTML-dokument för att ange vilken version av HTML som används.-->
 <!doctype html> 
+
+<!--Elementet <html> representerar rotstrukturen i ett HTML-dokument.
+Det markerar början av webbsidan och innehåller allt innehåll som ska visas på sidan, inklusive huvudinnehållet (head) och det synliga innehållet (body).-->
 <html>
+
+<!--Här innehåller vi meta-information om webbsidan, som titel, metataggar och länkar till externa resurser.-->
 <head>
+
+    <!--Elementet <title> används för att definiera webbsidans titel, vilket visas i webbläsarens flik eller fönsterrubrik. Det ger en beskrivande etikett för sidan.-->
     <title>Startsida</title>
+
+    <!--Elementet <link> med attributen "href" och "rel" används för att länka till externa resurser, som stilmallar (CSS). Det hjälper till att separera stil från innehåll och förbättra webbsidans presentation.-->
     <link href="webbplats.css" rel=stylesheet>
+
+    <!--Elementet <meta> med attributet "charset" används för att definiera teckenuppsättningen som används på webbsidan. "utf-8" är en vanlig teckenuppsättning som kan hantera de flesta språk och specialtecken. Det säkerställer korrekt textkodning och visning.-->
     <meta charset="utf-8">
 </head>
+
+<!--Här placeras det synliga innehållet som visas i webbläsaren, inklusive text, bilder, länkar och andra element.-->
 <body>
 
+<!--<div> är ett generiskt kontainerelement som används för att strukturera innehåll på webbsidor. Det möjliggör organisering av sidhuvud, sidfot, eller innehållsblock och kan anpassas med CSS och JavaScript för design och funktion. Det är en kraftfull webbdesignkomponent.-->
 <div>
+
+    <!--<header> definierar webbsidans toppsektion med viktig information som rubrik, logotyp och navigationsmenyer. Det skapar en tydlig hierarki och markerar sidans inledande innehåll.-->
     <header>
+            
+            <!--<nav> definierar en navigationssektion där användare hittar länkar och menyer för att enklare navigera mellan webbsidans olika delar. Det hjälper till att tydligt separera navigationsinnehåll från resten av sidan.-->
             <nav>
+
+                <!--<ul> används för att skapa en osorterad lista av punkter på webbsidor, där ordningen inte spelar roll. Varje punkt representeras av ett <li>-->
                 <ul>
+                    
+                    <!--<li>-element inom <ul>, vilket ger en punktlista utan numrering eller bokstäver framför varje punkt.-->
                     <li><a href="index.html"><button class="hem">Startsida</button></a></li>
                     <li><a href="om oss.html"><button class="om oss"> Mer om oss</button></a></li>
                     <li><a href="kontakta oss.html"><button class="kontakta oss"> Kontakta oss</button></a></li>
                 </ul>
             </nav>
     </header>
+
+    <!--<main> definierar huvudinnehållet på en webbsida och fokuserar på det primära innehållet som sidan innehåller. Det hjälper till att strukturera och klargöra sidans huvudsakliga innehåll.-->
     <main>
+
+        <!--<h1> används för att definiera den primära rubriken på en webbsida eller en avsnittsrubrik. Den ger betoning åt texten och indikerar dess vikt inom sidans hierarki.-->
         <h1>
             VXOCHAINS
         </h1>
         
+        <!--<p> används för att definiera och formatera en enskild textavsnitt på en webbsida. Det skapar en avgränsad textblock och underlättar läsbarhet och layout av textinnehåll.-->
+            <!--class tillåter tilldelning av CSS-stilar och beteenden till ett eller flera HTML-element, vilket möjliggör enkel och effektiv formatering och anpassning av webbsidans innehåll.-->
         <p class=inledning> 
             Hej vi är ett UF-företag.
         </p>
-        
+
+        <!--<img> används för att infoga bilder i HTML.-->
+        <!--class hjälper till att definiera CSS-stilar för bilderna, inklusive storlek, position, marginaler och andra visuella egenskaper, vilket möjliggör anpassning av bildernas utseende.-->
+        <!--src (source) i <img>-elementet används för att specificera sökvägen till bildfilen som ska visas på webbsidan. Den pekar på bilden och gör det möjligt för webbläsaren att hämta och visa den.-->
+        <!--alt (alternate text) används för att tillhandahålla en beskrivande text för bilden. Om bilden inte kan laddas, eller om användaren använder en skärmläsare för tillgänglighet, kommer -->
         <img class="vxochains" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoXFUKrvvWBx4qhAqJ1QsJhXY6P9CB9yqgLw&usqp=CAU" alt="vxochains">
-        
+
+        <!--<a href> används för att skapa hyperlänkar i HTML. Den definierar en länk till en annan webbsida, dokument eller resurs genom att ange URL:en i href-attributet.-->
+        <!--target="_blank" i <a> öppnar länken i en ny webbläsarflik eller fönster, vilket behåller den ursprungliga sidan öppen medan användaren besöker länken, vilket är användbart för att länka till externa resurser utan att lämna din webbsida.-->
         <a href="https://www.instagram.com/vxochains/?next=%2F" target="_blank">vxochains</a>
         
+        <!--border i en HTML-tabell används för att definiera en synlig ram eller kantlinje runt tabellcellerna. Det styr tjockleken och stilen på kanten, vilket kan förbättra tabellens visuella utseende och tydlighet.-->
         <table border="1">
+
+            <!--<tr> (table row) används för att definiera en rad i en HTML-tabell. Den innehåller en uppräkning av celler som representerar information i tabellen.-->
             <tr>
+
+                <!--<th> (table header cell) används för att definiera en rubrikcell i en HTML-tabell. Den markerar cellerna som innehåller tabellens huvudrubrik eller kategorinamn, vilket hjälper till att skapa en bättre struktur och förståelse av tabellens data. Rubrikceller formateras ofta fett eller centrerat som standard.-->
                 <th>Vad ni kan köpa</th>
                 <th>Hur mycket det kostar</th>
             </tr>
