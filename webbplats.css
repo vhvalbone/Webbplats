@@ -1,30 +1,38 @@
+/*ja gjordet kommand för att det fixar hemsidans background färg*/
 body{
-    background-color:rgb(255, 255, 255)
+    background-color:rgb(0, 0, 0)
 }
+
 h1{
-    color:rgb(54, 148, 117);
+    color:rgb(255, 145, 0);
     font-family:arial;
     font-size: 25px;
     text-align: center;
 }
+
 .inledning{
-    color:rgb(30, 158, 158);
+    color:rgb(250, 135, 4);
     Font-family: 'times new roman', times, serif;
     font-size:15px;
     text-align: center
 }
+
 .vxochains{
     width:190px
 }
+
 .Teknikum{
     width: 30%
 }
+
 .instagram{
     width: 20%;
 }
+
 a{
-    color:red
+    color:rgb(255, 115, 0)
 }
+
 nav{
     background-color: rgb(240, 132, 0);
     grid-area: nav;
@@ -44,10 +52,14 @@ nav li{
     display: grid;
     align-items: stretch;
 }
-    footer {
-        background-color: #fd9001;
-        color: #fff;
-    }
+
+footer {
+    background-color:#fd9001;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+     }
 
     footer ul {
         list-style-type: none;
@@ -61,11 +73,7 @@ nav li{
 
     footer ul li {
         margin: 5px 10px;
-    }
-
-    footer {
-        color: #12048d;
-        text-decoration: none;
+        color: #000000;
     }
     table {
         border-collapse: collapse;
@@ -81,7 +89,24 @@ nav li{
         text-align: center;
         vertical-align: middle;
         border: 1px solid #999;
-        color:#12048d;
+        color: #fd9001;
     } 
-    
+.omoss{
+    color: #fd9001;
+}
 
+.Kont{
+    color: #fd9001;
+}
+
+.vad{
+    color: #fd9001;
+}
+
+.mest{
+    color: #fd9001;
+}
+
+li{
+    color: #fd9001;
+}
