@@ -1,38 +1,72 @@
-/*ja gjordet kommand för att det fixar hemsidans background färg*/
+/*body { } används i CSS för att definiera stilregler som ska tillämpas på hela sidans innehåll (body). Det gör det möjligt att justera bakgrundsfärger, textstorlekar, typsnitt, marginaler och andra visuella egenskaper som påverkar hela webbsidan.*/
 body{
+
+    /*Background-color bestämmer min backgrounds färg på hemsidan*/
     background-color:rgb(0, 0, 0)
 }
 
+/*
+h1 {} används i CSS för att definiera stilregler som ska tillämpas på alla h1-rubriker på en webbsida. Det gör det möjligt att anpassa textstorlek, färg, typsnitt och andra visuella egenskaper för de största rubrikerna på sidan.*/
 h1{
+
+    /*color bestämmer text färgen på min rubrik*/
     color:rgb(255, 145, 0);
+
+    /*font-family bestämmer vilket stil på texten min rubrik ska vara*/
     font-family:arial;
+
+    /*font-size bestämmer storleken på min rubrik*/
     font-size: 25px;
+
+    /*text-align bestämmer vart min rubrik ska ligga*/
     text-align: center;
 }
 
+/*.inledning redigera en (p class) och just denna redigera min inledning som är under rubriken*/
 .inledning{
+
+    /*color bestämmer färgen på min inledning*/
     color:rgb(250, 135, 4);
+
+    /*font-family bestämmer vilken stil min inledning ska ha*/
     Font-family: 'times new roman', times, serif;
+
+    /*font-size bestämmer storleken på inledningen*/
     font-size:15px;
+
+    /*text-align bestämmer vart min inledning ska vara i detta exemplet i mitten*/
     text-align: center
 }
 
+/*(.Vxochains) ändra på en av mina bilder eftersom det är en class*/
 .vxochains{
+
+    /*width bestämmer storleken på bilden*/
     width:190px
 }
 
+/*.teknikum ändrar en annan bild då det är en (class)*/
 .Teknikum{
+
+    /*width ändrar storleken på bilden*/
     width: 30%
 }
 
+/*.instagram ändrar en annan bild då det också är en class*/
 .instagram{
+
+    /*width ändrar storleken på bilden*/
     width: 20%;
 }
 
+/*a {} används i CSS för att definiera stilregler för länkar på webbsidan, vilket inkluderar färger, typsnitt och hover-effekter.*/
 a{
+
+    /*color ändrar färgen på länken*/
     color:rgb(255, 115, 0)
 }
 
+/*nav {} i CSS används för att stilisera navigationsmenyer på en webbsida, inklusive länkar, layout och utseende, för att skapa en enhetlig navigationsupplevelse.*/
 nav{
     background-color: rgb(240, 132, 0);
     grid-area: nav;
