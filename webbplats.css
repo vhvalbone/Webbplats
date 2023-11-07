@@ -63,84 +63,181 @@ h1{
 a{
 
     /*color ändrar färgen på länken*/
-    color:rgb(255, 115, 0)
+    color:rgb(253, 114, 0)
 }
 
 /*nav {} i CSS används för att stilisera navigationsmenyer på en webbsida, inklusive länkar, layout och utseende, för att skapa en enhetlig navigationsupplevelse.*/
 nav{
+
+    /*background-color ändra färgen på nav*/
     background-color: rgb(240, 132, 0);
+
+    /*grid-area: nav; i CSS placerar ett element inom ett specifikt område av en CSS Grid-layout som heter "nav." Det hjälper till att organisera webblayouter och kontrollera elementens position inom rutnätet.*/
     grid-area: nav;
+
+      /*color ändrar färgen på de olika länkarna till de olika sidorna*/
+      color: #000000;
 }
 
+/*nav > ul {} målriktar och stylar <ul> element som är direkt barn till ett <nav> element i HTML. Det används för att ändra utseendet på listor som används som navigationsmenyer.*/
 nav > ul{
+
+    /*display: grid; används för att göra ett HTML-element till ett rutnät (grid) för att enkelt hantera layouten och placeringen av innehåll på en webbsida.*/
     display: grid;
+
+    /* i grid-template-columns bestämmer du hur många columner du ska ha i din nav*/
     grid-template-columns: 1fr 1fr 1fr;
+
+    /* height bestämmer hur hög din nav ska vara*/
     height: 15px;
+
+    /*margin bestämmer hur stort avstånd mellan dina element*/
     margin: 15px;
+
+    /*padding bestämmer avstånder mellan elemntens text*/
     padding: 15px;
 }
 
-nav li{
+/*nav > li {} används för att stilisera direkt underordnade <li> element som finns inom ett <nav> element i HTML. Det hjälper till att anpassa stilen för länkar eller objekt i navigationslistor inom detta specifika område.*/
+nav > li{
+
+    /*list-style-type i CSS ändrar typen av märkning (till exempel punkt, nummer) som visas före listelement i HTML-listor.*/
     list-style-type: circle;
-    text-align: left;
+
+    /*display: grid; används för att göra ett HTML-element till ett rutnät (grid) för att enkelt hantera layouten och placeringen av innehåll på en webbsida.*/
     display: grid;
+
+    /*align-items i CSS styr vertikal placering av element inom flexbox eller rutnät, med alternativ för att centrera, justera längst upp/ned och mer. Det är användbart för att hantera layoutens höjdposition.*/
     align-items: stretch;
+
 }
 
+/*footer{} i CSS används för att styra utseendet och layouten av HTML-element som är taggade som "footer", vanligtvis placerade längst ner på en webbsida.*/
 footer {
-    background-color:#fd9001;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-     }
 
+    /*ändrar bakgrunds färgen på footern*/
+    background-color:#fd9001;
+
+    /*ändrar positionen på footern*/
+    position: fixed;
+
+    /*fixar så att footern är längst ner på hemsidan*/
+    bottom: 0;
+
+    /*fixar hur lång från vänster till höger footern ska vara*/
+    width: 100%;
+
+    /*padding bestämmer avstånder mellan elemntens text*/
+    padding: 10px;
+    }
+
+    /*"footer > ul" i CSS riktar sig till alla <ul> (olistade listor) som är direkta barn till ett <footer>-element och låter dig styra deras utseende och layout. Detta hjälper till att anpassa stil och design för listor som är specifika för footern på en webbsida.*/
     footer ul {
+
+        /*list-style-type i CSS används för att definiera typen av märkning (såsom punkter, siffror eller bokstäver) som används i olistade listor (<ul>) eller numrerade listor (<ol>). Det påverkar utseendet på listpunkterna eller numreringen i listelementen.*/
         list-style-type: none;
+
+        /*padding bestämmer avstånder mellan elemntens text*/
         padding: 0;
+
+        /*display: grid; används för att göra ett HTML-element till ett rutnät (grid) för att enkelt hantera layouten och placeringen av innehåll på en webbsida*/
         display: grid;
+
+        /*i grid-template-columns bestämmer du hur många columner du ska ha i din nav*/
         grid-template-columns: 1fr 1fr;
+
+        /*detta ändra höjden på footern*/
         height: 15px;
+
+        /*margin bestämmer hur stort avstånd mellan dina element*/
         margin: 15px;
+
+        /*padding bestämmer avstånder mellan elemntens text*/
         padding: 15px;
     }
 
+    /*footer ul li i CSS används för att styra utseendet på listelement (<li>) som är inbäddade i en olistad lista (<ul>) som finns inuti ett <footer>-element på en webbsida.*/
     footer ul li {
+
+        /*margin bestämmer hur stort avstånd mellan dina element*/
         margin: 5px 10px;
+
+        /*detta ändrar färgen på texten i footern*/
         color: #000000;
     }
+
+    /*I CSS är "table" en selektor som riktar sig till alla HTML-tabeller på en webbsida. Genom att använda "table" kan du definiera och styra utseendet och layouten för tabeller, inklusive egenskaper som färger, storlekar och avstånd mellan celler.*/
     table {
+
+        /*border-collapse i CSS styr om gränserna mellan tabellceller ska vara separerade eller sammanfogade.*/
         border-collapse: collapse;
+
+        /*border i CSS används för att definiera och anpassa en kants utseende runt ett HTML-element.*/
         border: 2px solid #333;
+
+        /*font-family bestämmer vilket stil på texten min rubrik ska vara*/
         font-family: Arial, sans-serif;
+
+        /*Background-color bestämmer min backgrounds färg på hemsidan*/
         background-color: #f2f2f2;
+
+        /*background-image:url('background-image.jpg'); i CSS används för att sätta en bakgrundsbild för ett HTML-element. I detta fall anger det att "background-image.jpg" är den bild som ska användas som bakgrund för elementet.*/
         background-image:url('background-image.jpg');
+
+        /*background-size: cover; i CSS gör att bakgrundsbilden anpassas så att den täcker hela elementets bakgrund utan att sträckas eller klippas.*/
         background-size: cover;
     }
     
+    /*I CSS, th används för att stilisera tabellrubriker och td för att stilisera tabellens dataceller, vilket gör det möjligt att anpassa utseendet för en tabells rubriker och innehåll.*/
     th, td {
+
+        /*padding bestämmer avstånder mellan elemntens text*/
         padding: 10px;
+
+        /*text-align bestämmer vart min inledning ska vara i detta exemplet i mitten*/
         text-align: center;
+
+        /*vertical-align: middle; i CSS centrerar innehållet vertikalt inom ett element.*/
         vertical-align: middle;
+
+        /*border i CSS används för att definiera och anpassa en kants utseende runt ett HTML-element*/
         border: 1px solid #999;
+
+        /*color bestämmer färgen på texten i tabellen*/
         color: #fd9001;
     } 
-.omoss{
+
+/*är en class och redigera vilken färg "knappen" till om oss sidan ska vara*/
+.om{
+
+    /*color bestämmer färgen på texten för om*/
     color: #fd9001;
 }
 
-.Kont{
+/*är en class och redigera vilken färg "knappen" till kontakta oss sidan ska vara*/
+.Kontakt{
+
+    /*color ändrar färgen på texten för kontakta oss*/
     color: #fd9001;
 }
 
-.vad{
+/*är en class och redigera vilken färg "knappen" till startsidan sidan ska vara*/
+.hem{
+
+    /*color ändrar färgen på texten för startsidan*/
     color: #fd9001;
 }
 
+/*.mest är en class som redigera texten där det står vad vi sålt mest av*/
 .mest{
+
+    /*color ändrar förgen på texten om hur mycket vi sålt*/
     color: #fd9001;
 }
 
+/*li redigera alla texter i listor*/
 li{
+
+    /*color ändra färgen på texten i listorna */
     color: #fd9001;
 }
